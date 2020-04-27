@@ -467,4 +467,28 @@
       </SelectionMemento>
     </MementoCommand>
   </UndoTransaction>
+  <UndoTransaction tv-sec="1587961552" tv-usec="436985" name="move marker">
+    <MementoCommand obj-id="34" type-name="ARDOUR::Locations">
+      <Locations>
+        <Location id="258" name="session" start="0" end="2431999" flags="IsSessionRange" locked="0" position-lock-style="AudioTime"/>
+        <Location id="6046" name="Loop" start="0" end="596280" flags="IsAutoLoop" locked="0" position-lock-style="AudioTime"/>
+      </Locations>
+      <Locations>
+        <Location id="258" name="session" start="0" end="2385127" flags="IsSessionRange" locked="0" position-lock-style="AudioTime"/>
+        <Location id="6046" name="Loop" start="0" end="596280" flags="IsAutoLoop" locked="0" position-lock-style="AudioTime"/>
+      </Locations>
+    </MementoCommand>
+    <MementoCommand obj-id="42" type-name="SelectionMemento">
+      <SelectionMemento mouse-mode="MouseObject" zoom="456" left-frame="2156424" y-origin="0">
+        <Selection>
+          <Marker id="258" start="0"/>
+        </Selection>
+      </SelectionMemento>
+      <SelectionMemento mouse-mode="MouseObject" zoom="456" left-frame="2156424" y-origin="0">
+        <Selection>
+          <Marker id="258" start="0"/>
+        </Selection>
+      </SelectionMemento>
+    </MementoCommand>
+  </UndoTransaction>
 </UndoHistory>
