@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session version="3002" name="200404-song-idea" sample-rate="44100" end-is-free="0" id-counter="42644" name-counter="1" event-counter="186488" vca-counter="1">
+<Session version="3002" name="200404-song-idea" sample-rate="44100" end-is-free="0" id-counter="48546" name-counter="1" event-counter="187783" vca-counter="1">
   <ProgramVersion created-with="Ardour 1:5.12.0-3" modified-with="Ardour 1:5.12.0-3ubuntu4"/>
   <MIDIPorts>
     <Port name="MIDI Clock in" direction="input"/>
@@ -616,19 +616,19 @@
   </Regions>
   <CompoundAssociations>
     <CompoundAssociation copy="20189" original="20035"/>
-    <CompoundAssociation copy="20198" original="19897"/>
     <CompoundAssociation copy="20559" original="20251"/>
     <CompoundAssociation copy="20568" original="20296"/>
     <CompoundAssociation copy="20577" original="20278"/>
     <CompoundAssociation copy="20586" original="20428"/>
+    <CompoundAssociation copy="20198" original="19897"/>
   </CompoundAssociations>
-  <Selection>
-    <StripableAutomationControl stripable="30519" control="0" order="2"/>
-  </Selection>
+  <Selection/>
   <Locations>
-    <Location id="258" name="session" start="0" end="4173972" flags="IsSessionRange" locked="0" position-lock-style="AudioTime"/>
+    <Location id="258" name="session" start="0" end="11925634" flags="IsSessionRange" locked="0" position-lock-style="AudioTime"/>
     <Location id="6046" name="Loop" start="6559099" end="7751663" flags="IsAutoLoop" locked="0" position-lock-style="AudioTime"/>
     <Location id="30237" name="version 2" start="5366535" end="5366535" flags="IsMark" locked="0" position-lock-style="AudioTime"/>
+    <Location id="48528" name="Version 2 end" start="11329352" end="11329352" flags="IsMark" locked="0" position-lock-style="AudioTime"/>
+    <Location id="48541" name="version 2-range" start="5366535" end="11329352" flags="IsRangeMarker" locked="0" position-lock-style="AudioTime"/>
   </Locations>
   <Bundles/>
   <VCAManager/>
@@ -659,12 +659,8 @@
         </Port>
       </IO>
       <IO name="Master" id="83" direction="Output" default-type="audio" user-latency="0">
-        <Port type="audio" name="Master/audio_out 1">
-          <Connection other="system:playback_1"/>
-        </Port>
-        <Port type="audio" name="Master/audio_out 2">
-          <Connection other="system:playback_2"/>
-        </Port>
+        <Port type="audio" name="Master/audio_out 1"/>
+        <Port type="audio" name="Master/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="64" flags="Toggle,RealTime" value="0"/>
@@ -1363,7 +1359,7 @@ But changed to playlist 2 using Chip Strange 1 in yoshimi chip bank</Comment>
         <AutomationList automation-id="monitor" id="5179" interpolation-style="Discrete" state="Off"/>
       </Automation>
       <Pannable>
-        <Controllable name="pan-azimuth" id="5159" flags="" value="0.72115384615384592"/>
+        <Controllable name="pan-azimuth" id="5159" flags="" value="0.7211538553237915"/>
         <Controllable name="pan-width" id="5163" flags="" value="0"/>
         <Controllable name="pan-elevation" id="5161" flags="" value="0"/>
         <Controllable name="pan-frontback" id="5165" flags="" value="0"/>
@@ -1464,7 +1460,7 @@ But changed to playlist 2 using Chip Strange 1 in yoshimi chip bank</Comment>
       <Processor id="5173" name="guit" active="1" user-latency="0" own-input="1" own-output="0" output="guit" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="5159" flags="" value="0.72115384615384592"/>
+          <Controllable name="pan-azimuth" id="5159" flags="" value="0.7211538553237915"/>
           <Controllable name="pan-width" id="5163" flags="" value="0"/>
           <Controllable name="pan-elevation" id="5161" flags="" value="0"/>
           <Controllable name="pan-frontback" id="5165" flags="" value="0"/>
@@ -6996,12 +6992,8 @@ But changed to playlist 2 using Chip Strange 1 in yoshimi chip bank</Comment>
   <RouteGroups/>
   <Click>
     <IO name="Click" id="51" direction="Output" default-type="audio" user-latency="0">
-      <Port type="audio" name="Click/audio_out 1">
-        <Connection other="system:playback_1"/>
-      </Port>
-      <Port type="audio" name="Click/audio_out 2">
-        <Connection other="system:playback_2"/>
-      </Port>
+      <Port type="audio" name="Click/audio_out 1"/>
+      <Port type="audio" name="Click/audio_out 2"/>
     </IO>
     <Processor id="52" name="Amp" active="1" user-latency="0" type="amp">
       <Automation>
@@ -7043,7 +7035,7 @@ But changed to playlist 2 using Chip Strange 1 in yoshimi chip bank</Comment>
     <ExportRevision revision="1"/>
     <RangeExportProfile>
       <ExportTimespan format="Timecode">
-        <Range id="6046"/>
+        <Range id="48541"/>
       </ExportTimespan>
       <ExportChannelConfiguration split="0" channels="2">
         <Channel number="1">
@@ -7056,13 +7048,13 @@ But changed to playlist 2 using Chip Strange 1 in yoshimi chip bank</Comment>
       <ExportFormat id="e61c1d0f-95bd-48fb-b812-def99dbabe28"/>
       <ExportFilename>
         <Folder relative="1" path="/export"/>
-        <Field name="label" enabled="0"/>
+        <Field name="label" enabled="1" value="new-vocal-idea"/>
         <Field name="session" enabled="1"/>
         <Field name="snapshot" enabled="0"/>
-        <Field name="timespan" enabled="1"/>
+        <Field name="timespan" enabled="0"/>
         <Field name="revision" enabled="0"/>
         <Field name="time" enabled="0" value="T_None"/>
-        <Field name="date" enabled="0" value="D_None"/>
+        <Field name="date" enabled="1" value="D_BEShortY"/>
       </ExportFilename>
     </RangeExportProfile>
     <UI>
@@ -7073,7 +7065,7 @@ But changed to playlist 2 using Chip Strange 1 in yoshimi chip bank</Comment>
       <Window name="add-routes" visible="0" x-off="-1" y-off="-1" x-size="679" y-size="509"/>
       <Window name="add-video" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="inspector" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
-      <Window name="audio-midi-setup" visible="0" x-off="651" y-off="321" x-size="617" y-size="438"/>
+      <Window name="audio-midi-setup" visible="0" x-off="691" y-off="321" x-size="538" y-size="438"/>
       <Window name="video-export" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="script-manager" visible="0" x-off="839" y-off="381" x-size="341" y-size="372"/>
       <Window name="bundle-manager" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
@@ -7140,10 +7132,12 @@ But changed to playlist 2 using Chip Strange 1 in yoshimi chip bank</Comment>
       <Window name="PM-5173-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="P-12384-12415" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
       <Window name="P-12384-12414" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
+      <Window name="P-12384-42231" visible="0" x-off="279" y-off="0" x-size="847" y-size="404" custom-ui="1"/>
       <Window name="P-12384-12416" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
       <Window name="P-12384-12417" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
       <Window name="PM-12415-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="PM-12414-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="PM-42231-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="PM-12416-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="PM-12417-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="P-5707-5800" visible="0" x-off="603" y-off="210" x-size="20" y-size="20" custom-ui="1"/>
@@ -7156,16 +7150,14 @@ But changed to playlist 2 using Chip Strange 1 in yoshimi chip bank</Comment>
       <Window name="PM-5740-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="P-30519-30550" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
       <Window name="P-30519-30549" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
+      <Window name="P-30519-42552" visible="0" x-off="273" y-off="0" x-size="858" y-size="713" custom-ui="1"/>
       <Window name="P-30519-30551" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
       <Window name="P-30519-30552" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
       <Window name="PM-30550-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="PM-30549-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="PM-42552-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="PM-30551-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="PM-30552-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
-      <Window name="P-12384-42231" visible="0" x-off="279" y-off="0" x-size="847" y-size="404" custom-ui="1"/>
-      <Window name="PM-42231-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
-      <Window name="P-30519-42552" visible="0" x-off="273" y-off="0" x-size="858" y-size="713" custom-ui="1"/>
-      <Window name="PM-42552-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <GUIObjectState>
         <Object id="rtav 54" height="66" visible="1"/>
         <Object id="automation 58" height="66" visible="0"/>
