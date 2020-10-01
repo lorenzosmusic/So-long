@@ -1,31 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <UndoHistory>
-  <UndoTransaction tv-sec="1597727942" tv-usec="342075" name="resize notes">
-    <NoteDiffCommand midi-source="1528">
-      <ChangedNotes>
-        <Change property="StartTime" old="24.270408163265245" new="24.34457445200303" id="296206"/>
-        <Change property="Length" old="0.249975812547234" new="0.17580952380944836" id="296206"/>
-      </ChangedNotes>
-      <AddedNotes/>
-      <RemovedNotes/>
-    </NoteDiffCommand>
-    <MementoCommand obj-id="42" type-name="SelectionMemento">
-      <SelectionMemento mouse-mode="MouseDraw" zoom="256" left-frame="8189410" y-origin="294">
-        <Selection>
-          <MIDINotes region-id="80712">
-            <note note-id="296206"/>
-          </MIDINotes>
-        </Selection>
-      </SelectionMemento>
-      <SelectionMemento mouse-mode="MouseDraw" zoom="256" left-frame="8189410" y-origin="294">
-        <Selection>
-          <MIDINotes region-id="80712">
-            <note note-id="296206"/>
-          </MIDINotes>
-        </Selection>
-      </SelectionMemento>
-    </MementoCommand>
-  </UndoTransaction>
   <UndoTransaction tv-sec="1597727978" tv-usec="318764" name="move notes">
     <NoteDiffCommand midi-source="1528">
       <ChangedNotes>
@@ -487,5 +461,14 @@
         </Selection>
       </SelectionMemento>
     </MementoCommand>
+  </UndoTransaction>
+  <UndoTransaction tv-sec="1601527156" tv-usec="418842" name="capture">
+    <StatefulDiffCommand obj-id="89695" type-name="ARDOUR::AudioPlaylist">
+      <Changes>
+        <Regions>
+          <Add id="89732"/>
+        </Regions>
+      </Changes>
+    </StatefulDiffCommand>
   </UndoTransaction>
 </UndoHistory>
