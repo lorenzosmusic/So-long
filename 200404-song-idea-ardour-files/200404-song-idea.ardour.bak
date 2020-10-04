@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session version="3002" name="200404-song-idea" sample-rate="44100" end-is-free="0" id-counter="89750" name-counter="1" event-counter="303132" vca-counter="1">
+<Session version="3002" name="200404-song-idea" sample-rate="44100" end-is-free="0" id-counter="89919" name-counter="1" event-counter="304060" vca-counter="1">
   <ProgramVersion created-with="Ardour 1:5.12.0-3" modified-with="Ardour 1:5.12.0-3"/>
   <MIDIPorts>
     <Port name="MIDI Clock in" direction="input"/>
@@ -858,12 +858,9 @@
       <Controllable name="solo-safe" id="70" flags="Toggle" value="0" solo-safe="0"/>
       <IO name="Master" id="82" direction="Input" default-type="audio" user-latency="0">
         <Port type="audio" name="Master/audio_in 1">
-          <Connection other="Audio 1/audio_out 1"/>
           <Connection other="Audio/audio_out 1"/>
           <Connection other="Bass Uke/audio_out 1"/>
-          <Connection other="MIDI bass/audio_out 1"/>
           <Connection other="MIDI guit 1/audio_out 1"/>
-          <Connection other="MIDI keys/audio_out 1"/>
           <Connection other="fiesta-beat-142/audio_out 1"/>
           <Connection other="guit midi/audio_out 1"/>
           <Connection other="guit/audio_out 1"/>
@@ -872,12 +869,9 @@
           <Connection other="vocals/audio_out 1"/>
         </Port>
         <Port type="audio" name="Master/audio_in 2">
-          <Connection other="Audio 1/audio_out 2"/>
           <Connection other="Audio/audio_out 2"/>
           <Connection other="Bass Uke/audio_out 2"/>
-          <Connection other="MIDI bass/audio_out 2"/>
           <Connection other="MIDI guit 1/audio_out 2"/>
-          <Connection other="MIDI keys/audio_out 2"/>
           <Connection other="fiesta-beat-142/audio_out 2"/>
           <Connection other="guit midi/audio_out 2"/>
           <Connection other="guit/audio_out 2"/>
@@ -960,12 +954,8 @@
         <Port type="audio" name="fiesta-beat-142/audio_in 2"/>
       </IO>
       <IO name="fiesta-beat-142" id="205" direction="Output" default-type="audio" user-latency="0">
-        <Port type="audio" name="fiesta-beat-142/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="fiesta-beat-142/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="fiesta-beat-142/audio_out 1"/>
+        <Port type="audio" name="fiesta-beat-142/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="186" flags="Toggle,RealTime" value="0"/>
@@ -981,8 +971,8 @@
         <AutomationList automation-id="monitor" id="215" interpolation-style="Discrete" state="Off"/>
       </Automation>
       <Pannable>
-        <Controllable name="pan-azimuth" id="195" flags="" value="0.5"/>
-        <Controllable name="pan-width" id="199" flags="" value="1"/>
+        <Controllable name="pan-azimuth" id="195" flags="" value="1"/>
+        <Controllable name="pan-width" id="199" flags="" value="0"/>
         <Controllable name="pan-elevation" id="197" flags="" value="0"/>
         <Controllable name="pan-frontback" id="201" flags="" value="0"/>
         <Controllable name="pan-lfe" id="203" flags="" value="0"/>
@@ -1098,8 +1088,8 @@
       <Processor id="209" name="fiesta-beat-142" active="1" user-latency="0" own-input="1" own-output="0" output="fiesta-beat-142" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="195" flags="" value="0.5"/>
-          <Controllable name="pan-width" id="199" flags="" value="1"/>
+          <Controllable name="pan-azimuth" id="195" flags="" value="1"/>
+          <Controllable name="pan-width" id="199" flags="" value="0"/>
           <Controllable name="pan-elevation" id="197" flags="" value="0"/>
           <Controllable name="pan-frontback" id="201" flags="" value="0"/>
           <Controllable name="pan-lfe" id="203" flags="" value="0"/>
@@ -1645,12 +1635,8 @@ But changed to playlist 2 using Chip Strange 1 in yoshimi chip bank</Comment>
         <Port type="audio" name="guit/audio_in 1"/>
       </IO>
       <IO name="guit" id="5169" direction="Output" default-type="audio" user-latency="0">
-        <Port type="audio" name="guit/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="guit/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="guit/audio_out 1"/>
+        <Port type="audio" name="guit/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="5150" flags="Toggle,RealTime" value="0"/>
@@ -1796,12 +1782,8 @@ But changed to playlist 2 using Chip Strange 1 in yoshimi chip bank</Comment>
         <Port type="midi" name="guit midi/midi_in 1"/>
       </IO>
       <IO name="guit midi" id="5736" direction="Output" default-type="midi" user-latency="0">
-        <Port type="audio" name="guit midi/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="guit midi/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="guit midi/audio_out 1"/>
+        <Port type="audio" name="guit midi/audio_out 2"/>
         <Port type="midi" name="guit midi/midi_out 1"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
@@ -1898,12 +1880,8 @@ But changed to playlist 2 using Chip Strange 1 in yoshimi chip bank</Comment>
         <Port type="audio" name="vocals/audio_in 1"/>
       </IO>
       <IO name="vocals" id="12413" direction="Output" default-type="audio" user-latency="0">
-        <Port type="audio" name="vocals/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="vocals/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="vocals/audio_out 1"/>
+        <Port type="audio" name="vocals/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="12394" flags="Toggle,RealTime" value="0"/>
@@ -2235,12 +2213,8 @@ But changed to playlist 2 using Chip Strange 1 in yoshimi chip bank</Comment>
         <Port type="audio" name="Audio/audio_in 1"/>
       </IO>
       <IO name="Audio" id="30548" direction="Output" default-type="audio" user-latency="0">
-        <Port type="audio" name="Audio/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Audio/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Audio/audio_out 1"/>
+        <Port type="audio" name="Audio/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="30529" flags="Toggle,RealTime" value="0"/>
@@ -2455,12 +2429,8 @@ But changed to playlist 2 using Chip Strange 1 in yoshimi chip bank</Comment>
         <Port type="audio" name="vocal 2/audio_in 1"/>
       </IO>
       <IO name="vocal 2" id="60394" direction="Output" default-type="audio" user-latency="0">
-        <Port type="audio" name="vocal 2/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="vocal 2/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="vocal 2/audio_out 1"/>
+        <Port type="audio" name="vocal 2/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="60375" flags="Toggle,RealTime" value="0"/>
@@ -2596,12 +2566,8 @@ different take playlists</Comment>
         <Port type="audio" name="vocal echo/audio_in 1"/>
       </IO>
       <IO name="vocal echo" id="61790" direction="Output" default-type="audio" user-latency="0">
-        <Port type="audio" name="vocal echo/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="vocal echo/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="vocal echo/audio_out 1"/>
+        <Port type="audio" name="vocal echo/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="61771" flags="Toggle,RealTime" value="0"/>
@@ -2787,12 +2753,8 @@ different take playlists</Comment>
         </Port>
       </IO>
       <IO name="Bass Uke" id="69933" direction="Output" default-type="audio" user-latency="0">
-        <Port type="audio" name="Bass Uke/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Bass Uke/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Bass Uke/audio_out 1"/>
+        <Port type="audio" name="Bass Uke/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="69914" flags="Toggle,RealTime" value="0"/>
@@ -3007,12 +2969,8 @@ different take playlists</Comment>
         <Port type="midi" name="MIDI guit 1/midi_in 1"/>
       </IO>
       <IO name="MIDI guit 1" id="79900" direction="Output" default-type="midi" user-latency="0">
-        <Port type="audio" name="MIDI guit 1/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="MIDI guit 1/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="MIDI guit 1/audio_out 1"/>
+        <Port type="audio" name="MIDI guit 1/audio_out 2"/>
         <Port type="midi" name="MIDI guit 1/midi_out 1"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="1"/>
@@ -3159,7 +3117,7 @@ different take playlists</Comment>
         <Automation>
           <AutomationList automation-id="gain" id="89656" interpolation-style="Linear" state="Off"/>
         </Automation>
-        <Controllable name="gaincontrol" id="89657" flags="GainLike" value="1"/>
+        <Controllable name="gaincontrol" id="89657" flags="GainLike" value="1.5530710220336914"/>
       </Processor>
       <Processor id="89686" name="Audio 1" active="1" user-latency="0" own-input="1" own-output="0" output="Audio 1" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
@@ -11088,8 +11046,6 @@ different take playlists</Comment>
   <LTC-In>
     <IO name="LTC In" id="47" direction="Input" default-type="audio" user-latency="0">
       <Port type="audio" name="LTC-in">
-        <Connection other="Click/audio_out 1"/>
-        <Connection other="Click/audio_out 2"/>
         <Connection other="system:capture_1"/>
       </Port>
     </IO>
