@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <UndoHistory>
-  <UndoTransaction tv-sec="1603258372" tv-usec="454554" name="mute region">
-    <StatefulDiffCommand obj-id="29568" type-name="ARDOUR::AudioRegion">
-      <Changes>
-        <muted from="0" to="1"/>
-        <beat from="203.99993159486016" to="407.99986318972032"/>
-      </Changes>
-    </StatefulDiffCommand>
-  </UndoTransaction>
   <UndoTransaction tv-sec="1603258425" tv-usec="521952" name="region copy">
     <StatefulDiffCommand obj-id="108008" type-name="ARDOUR::AudioPlaylist">
       <Changes>
@@ -237,5 +229,79 @@
         </Regions>
       </Changes>
     </StatefulDiffCommand>
+  </UndoTransaction>
+  <UndoTransaction tv-sec="1604290829" tv-usec="15582" name="mute regions">
+    <StatefulDiffCommand obj-id="29568" type-name="ARDOUR::AudioRegion">
+      <Changes>
+        <muted from="1" to="0"/>
+      </Changes>
+    </StatefulDiffCommand>
+    <StatefulDiffCommand obj-id="29555" type-name="ARDOUR::AudioRegion">
+      <Changes>
+        <muted from="1" to="0"/>
+      </Changes>
+    </StatefulDiffCommand>
+    <StatefulDiffCommand obj-id="29542" type-name="ARDOUR::AudioRegion">
+      <Changes>
+        <muted from="1" to="0"/>
+      </Changes>
+    </StatefulDiffCommand>
+    <StatefulDiffCommand obj-id="29529" type-name="ARDOUR::AudioRegion">
+      <Changes>
+        <muted from="1" to="0"/>
+      </Changes>
+    </StatefulDiffCommand>
+    <StatefulDiffCommand obj-id="29581" type-name="ARDOUR::AudioRegion">
+      <Changes>
+        <muted from="1" to="0"/>
+      </Changes>
+    </StatefulDiffCommand>
+    <StatefulDiffCommand obj-id="29594" type-name="ARDOUR::AudioRegion">
+      <Changes>
+        <muted from="1" to="0"/>
+      </Changes>
+    </StatefulDiffCommand>
+    <StatefulDiffCommand obj-id="29607" type-name="ARDOUR::AudioRegion">
+      <Changes>
+        <muted from="1" to="0"/>
+      </Changes>
+    </StatefulDiffCommand>
+    <StatefulDiffCommand obj-id="29620" type-name="ARDOUR::AudioRegion">
+      <Changes>
+        <muted from="1" to="0"/>
+      </Changes>
+    </StatefulDiffCommand>
+    <MementoCommand obj-id="42" type-name="SelectionMemento">
+      <SelectionMemento mouse-mode="MouseObject" zoom="10208" left-frame="3531968" y-origin="0">
+        <Selection>
+          <Regions>
+            <Region id="29568"/>
+            <Region id="29555"/>
+            <Region id="29542"/>
+            <Region id="29529"/>
+            <Region id="29581"/>
+            <Region id="29594"/>
+            <Region id="29607"/>
+            <Region id="29620"/>
+          </Regions>
+          <Marker id="48541" start="1"/>
+        </Selection>
+      </SelectionMemento>
+      <SelectionMemento mouse-mode="MouseObject" zoom="10208" left-frame="3531968" y-origin="0">
+        <Selection>
+          <Regions>
+            <Region id="29568"/>
+            <Region id="29555"/>
+            <Region id="29542"/>
+            <Region id="29529"/>
+            <Region id="29581"/>
+            <Region id="29594"/>
+            <Region id="29607"/>
+            <Region id="29620"/>
+          </Regions>
+          <Marker id="48541" start="1"/>
+        </Selection>
+      </SelectionMemento>
+    </MementoCommand>
   </UndoTransaction>
 </UndoHistory>
